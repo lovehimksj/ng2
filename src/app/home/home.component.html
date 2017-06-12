@@ -1,0 +1,18 @@
+<div class="row">
+  <mz-card *ngFor="let hero of campaigns"
+           [backgroundClass]="'blue-grey darken-1'"
+           [textClass]="'white-text'"
+           [hoverable]="true" class="xl3 col">
+    <mz-card-title class="truncate">
+      {{hero.campaignName}}
+    </mz-card-title>
+    <mz-card-content>
+      {{hero.campaignId}} , {{hero.campaignType}} , {{hero.advertiserRate}} , {{hero.advertiserCurrency}} , {{hero.campaignStatus}}
+      {{hero.campaignStartDate}} , {{hero.campaignEndDate}} , {{hero.updatedOn}}
+    </mz-card-content>
+    <mz-card-action>
+      <a href="#">This is a link</a>
+      <a href="#">This is a link</a>
+    </mz-card-action>
+  </mz-card>
+</div>
